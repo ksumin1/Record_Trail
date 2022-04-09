@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <!-- 뒤로가기(임시) -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@color/lime" />
+
+        <!-- 제목 텍스트 -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="첫 번째 산책로"
+            android:textAlignment="center"
+            android:fontFamily="@font/leferibaseregular"
+            android:textSize="20dp"
+            android:textColor="@color/dark_gray"/>
+    </LinearLayout>
+
+    <!-- 이미지 지도 -->
+
+    <ImageView
+        android:id="@+id/Image_map"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/image_round" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30분"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/leferibaseregular"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="·"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/leferibaseregular"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.1KM"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/leferibaseregular"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="·"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/leferibaseregular"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36Kcal"
+            android:fontFamily="@font/leferibaseregular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/leferipointwhite"
+            android:background="@drawable/bg_null_button"
+            android:text="코스 추천하기"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="·"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/leferipointwhite"/>
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_null_button"
+            android:text="즐겨찾기"
+            android:textSize="15dp"
+            android:fontFamily="@font/leferipointwhite"/>
+
+    </LinearLayout>
+
+    <!-- 산책하기 버튼 -->
+    <android.widget.Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_round"
+        android:fontFamily="@font/leferibaseregular"
+        android:text="산책하기"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
